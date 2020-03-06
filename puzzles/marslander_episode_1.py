@@ -1,6 +1,6 @@
 import sys
 import math
-
+import random
 # Auto-generated code below aims at helping you parse
 # the standard input according to the problem statement.
 
@@ -21,9 +21,9 @@ while True:
 
     # Write an action using print
     # To debug: print("Debug messages...", file=sys.stderr)
-    if abs(v_speed) >= 40:
+    if abs(v_speed) >= 40 and fuel > 300:
         print("0 {0}".format(4))
     else:
-        print("0 {0}".format(4-power))
+        print("0 {0}".format(0))
 
     # 2 integers: rotate power. rotate is the desired rotation angle (should be 0 for level 1), power is the desired thrust power (0 to 4).
